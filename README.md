@@ -1,6 +1,12 @@
-# :swimmer: C:heavy_plus_sign::heavy_plus_sign: Deep Dive
+# :swimmer: C++ Deep Dive
 
-## :books: Workbooks documenting my journey into the vast universe that is C++.
+## :books: Workbooks documenting my journey into the vast universe that is C++:
+
+### - [Chapter 0 — New Beginnings](https://github.com/geotrush/Cpp-Deep-Dive/tree/master/Chapter%200%20-%20New%20Beginnings)
+### - Chapter 2 — ???
+### - Chapter 3 — ???
+### - Chapter 4 — ???
+### - Chapter 5 — ???
 
 ## :bow: Acknowledgment: [Art of Modern C++ Development: 5-Course Specialization](https://www.coursera.org/specializations/c-plus-plus-modern-development)
 
