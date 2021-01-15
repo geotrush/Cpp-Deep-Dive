@@ -149,7 +149,7 @@ public:
 				cout << setw(4) << setfill('0') << item.first.GetYear()  << '-'
 				     << setw(2) << setfill('0') << item.first.GetMonth() << '-'
 				     << setw(2) << setfill('0') << item.first.GetDay()   << ' '
-                     << event   << endl;
+                     		     << event   << endl;
 			}
 		}
 	}
