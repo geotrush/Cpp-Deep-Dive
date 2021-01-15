@@ -2,7 +2,7 @@
 
 ## :books: Workbooks documenting my journey into the vast universe that is C++:
 
-- [Chapter 0 — New Beginnings](https://github.com/geotrush/Cpp-Deep-Dive/tree/master/Chapter%200%20-%20New%20Beginnings) [:white circle:](https://www.coursera.org/learn/c-plus-plus-white?specialization=c-plus-plus-modern-development)
+- ### [Chapter 0 — New Beginnings](https://github.com/geotrush/Cpp-Deep-Dive/tree/master/Chapter%200%20-%20New%20Beginnings) [:white circle:](https://www.coursera.org/learn/c-plus-plus-white?specialization=c-plus-plus-modern-development)
 - Chapter 2 — ???
 - Chapter 3 — ???
 - Chapter 4 — ???
