@@ -46,7 +46,7 @@ public:
         year = 1970;
         month = 1;
         day = 1;
-    }
+    	}
 	Date(int new_year, int new_month, int new_day) {
 		if (new_month > 12 || new_month < 1) {
 			throw logic_error("Month value is invalid: " + to_string(new_month));
