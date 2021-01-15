@@ -205,7 +205,7 @@ int main() {
 				database.PrintDatabase();
 			}
 			else if (operation.empty()) {
-                // Ignore
+				// Ignore
 			}
 			else {
 				throw logic_error("Unknown command: " + operation);
