@@ -8,6 +8,6 @@
 - ### Chapter 4 — ???
 - ### Chapter 5 — ???
 
-## :bow: *Acknowledgment: [Art of Modern C++ Development: 5-Course Specialization](https://www.coursera.org/specializations/c-plus-plus-modern-development)*
+## :bow: *Acknowledgment: [Art of Modern C++ Development: 5-Part Specialization](https://www.coursera.org/specializations/c-plus-plus-modern-development)*
 
 ## :hugs: *Any contributions, corrections or suggestions are very welcome!*
