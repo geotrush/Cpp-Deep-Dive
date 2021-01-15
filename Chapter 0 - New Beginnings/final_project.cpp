@@ -87,7 +87,7 @@ istream& operator >> (istream& input, Date& date) {
 	int year;
 	date_stream >> year;
 	if (date_stream.fail() || date_stream.peek() != '-') {
-		throw logic_error("Wrong date format: " + str_date);
+	throw logic_error("Wrong date format: " + str_date);
 	}
 	date_stream.ignore();
 
