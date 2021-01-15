@@ -11,7 +11,7 @@ You should define a class with the five public methods:
 You should catch the following exceptions:
 1) "Unknown command: COMMAND": if the COMMAND (first input string) wasn't recognised;
 2) "Wrong date format: DATE": if the DATE (second input string) doesn't comply with the formatting:
-    a) "YEAR-MONTH-DAY": valid format can contain '+' or '-' signs before the integers;
+	a) "YEAR-MONTH-DAY": valid format can contain '+' or '-' signs before the integers;
     b) If MONTH is not between 1 and 12, output "Month value is invalid: MONTH";
     c) If DAY is not between 1 and 31, output "Day value is invalid: DAY";
 Notes:
