@@ -10,4 +10,4 @@
 
 ## :bow: *Acknowledgment: [Art of Modern C++ Development: 5-Part Specialization](https://www.coursera.org/specializations/c-plus-plus-modern-development)*
 
-## :hugs: *Any contributions, corrections or suggestions are very welcome!*
+## :hugs: *Any corrections are much appreciated!*
