@@ -1,6 +1,6 @@
-# :swimmer: C++ Deep Dive
+# :swimmer: C++ Deep Dive &nbsp;
 
-### [![forthebadge](https://forthebadge.com/images/badges/powered-by-coders-sweat.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coders-sweat.svg)](http://forthebadge.com)
 
 ## :books: Workbooks documenting my journey through the vast universe that is C++, guided by the Coursera Specialization on the Art of Modern C++ Development from MIPT & Yandex:
 
