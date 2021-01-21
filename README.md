@@ -1,4 +1,4 @@
-# :swimmer: C++ Deep Dive &nbsp;
+# :swimmer: [C++ Deep Dive](https://github.com/geotrush/Cpp-Deep-Dive) &nbsp;
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coders-sweat.svg)](http://forthebadge.com)
 
