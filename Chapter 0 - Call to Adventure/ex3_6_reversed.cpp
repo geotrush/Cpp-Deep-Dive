@@ -12,7 +12,7 @@ using std::vector;
 
 vector<int> Reversed(const vector<int>& input) {
     vector<int> result;
-	for (auto iter = input.rbegin(); iter != input.rend(); iter++) {
+	for (auto iter = input.rbegin(); iter != input.rend(); ++iter) {
 		result.push_back(*iter);
 	}
 	return result;
