@@ -108,7 +108,7 @@ istream& operator >> (istream& input, Date& date) {
 	return input;
 }
 
-bool operator < (const Date& left, const Date& right) {
+const bool operator < (const Date& left, const Date& right) {
 	if (left.GetYear() == right.GetYear()) {
 		if (left.GetMonth() == right.GetMonth()) {
 			return left.GetDay() < right.GetDay();

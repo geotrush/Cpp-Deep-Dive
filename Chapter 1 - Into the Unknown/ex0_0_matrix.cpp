@@ -74,7 +74,7 @@ private:
     vector<vector<int>> elements;
 };
 
-bool operator == (const Matrix& one, const Matrix& two) {
+const bool operator == (const Matrix& one, const Matrix& two) {
     if (one.GetNumRows() != two.GetNumRows() ||
         one.GetNumColumns() != two.GetNumColumns()) {
         return false;
@@ -91,7 +91,7 @@ bool operator == (const Matrix& one, const Matrix& two) {
     return true;
 }
 
-Matrix operator + (const Matrix& one, const Matrix& two) {
+const Matrix operator + (const Matrix& one, const Matrix& two) {
     if (one.GetNumRows() != two.GetNumRows()) {
         throw invalid_argument("Mismatched number of rows");
     }

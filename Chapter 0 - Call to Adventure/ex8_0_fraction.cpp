@@ -60,11 +60,11 @@ private:
 	int q;
 };
 
-bool operator == (const Rational& left, const Rational& right) {
+const bool operator == (const Rational& left, const Rational& right) {
     return left.Numerator() == right.Numerator() && left.Denominator() == right.Denominator();
 }
 
-Rational operator + (const Rational& left, const Rational& right) {
+const Rational operator + (const Rational& left, const Rational& right) {
 	if (left.Denominator() == right.Denominator()) {
 		return {left.Numerator() + right.Numerator(), left.Denominator()};
 	}
@@ -74,20 +74,20 @@ Rational operator + (const Rational& left, const Rational& right) {
 	}
 }
 
-Rational operator - (const Rational& left, const Rational& right) {
+const Rational operator - (const Rational& left, const Rational& right) {
 	return left + Rational(-right.Numerator(), right.Denominator());
 }
 
-bool operator < (const Rational& left, const Rational& right) {
+const bool operator < (const Rational& left, const Rational& right) {
 	return (left - right).Numerator() < 0;
 }
 
-Rational operator * (const Rational& left, const Rational& right) {
+const Rational operator * (const Rational& left, const Rational& right) {
 	return {left.Numerator() * right.Numerator(),
 			left.Denominator() * right.Denominator()};
 }
 
-Rational operator / (const Rational& left, const Rational& right) {
+const Rational operator / (const Rational& left, const Rational& right) {
 	if (right.Numerator() == 0) {
 		throw domain_error("Division by zero!");
 	}
