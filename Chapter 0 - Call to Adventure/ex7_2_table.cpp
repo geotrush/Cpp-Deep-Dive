@@ -4,11 +4,11 @@ You should write a program that:
 1) Reads the two integers n and m from the first line of "input.txt";
 2) Reads from each of the next n lines m integers separated by commas;
 3) Outputs the table of n rows and m columns taking into account that:
-	a) Cell size equals 10;
-	b) Neighbouring cells are separated by a space;
-	c) Last cell of the row doesn't end on a space;
-	d) Last row doesn't end with a new line.
-*/ 
+    a) Cell size equals 10;
+    b) Neighbouring cells are separated by a space;
+    c) Last cell of the row doesn't end on a space;
+    d) Last row doesn't end with a new line.
+*/
 #include <iostream>
 #include <iomanip>
 #include <fstream>
