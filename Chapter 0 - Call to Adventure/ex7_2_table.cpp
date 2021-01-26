@@ -8,7 +8,7 @@ You should write a program that:
 	b) Neighbouring cells are separated by a space;
 	c) Last cell of the row doesn't end on a space;
 	d) Last row doesn't end with a new line.
-*/
+*/ 
 #include <iostream>
 #include <iomanip>
 #include <fstream>
