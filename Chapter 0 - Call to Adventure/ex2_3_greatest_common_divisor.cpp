@@ -12,13 +12,13 @@ using std::cout;
 using std::swap;
 
 int main() {
-	int a, b;
+    int a, b;
     cin >> a >> b;
 
-	while (b) {
+    while (b) {
         swap(a %= b, b);
     }
-	cout << a;
+    cout << a;
 
-	return 0;
+    return 0;
 }

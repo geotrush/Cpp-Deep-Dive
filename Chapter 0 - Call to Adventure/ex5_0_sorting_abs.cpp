@@ -18,21 +18,21 @@ using std::string;
 using std::vector;
 
 int main() {
-	int n;
-	cin >> n;
-	
-	vector<int> numbers(n);
-	for (int& num : numbers) {
-		cin >> num;
-	}
+    int n;
+    cin >> n;
+    
+    vector<int> numbers(n);
+    for (int& num : numbers) {
+        cin >> num;
+    }
 
-	sort(numbers.begin(), numbers.end(), [](const int& left, const int& right) {
+    sort(numbers.begin(), numbers.end(), [](const int& left, const int& right) {
         return abs(left) < abs(right);
         });
-		
+        
     for (const int& num : numbers) {
         cout << num << ' ';
     }
 
-	return 0;
+    return 0;
 }

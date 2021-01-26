@@ -16,11 +16,11 @@ using std::string;
 using std::vector;
 
 int main() {
-	string a, b, c;
-	cin >> a >> b >> c;
-	vector<string> V = {a, b ,c};
-	sort(begin(V), end(V));
-	cout << V[0];
+    string a, b, c;
+    cin >> a >> b >> c;
+    vector<string> V = {a, b ,c};
+    sort(begin(V), end(V));
+    cout << V[0];
 
-	return 0;
+    return 0;
 }

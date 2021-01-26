@@ -24,27 +24,27 @@ using std::string;
 using std::vector;
 
 int main() {
-	int q;
-	cin >> q;
+    int q;
+    cin >> q;
 
-	vector<bool> queue;
-	for (int n = 0; n < q; ++n) {
-		string query;
-		cin >> query;
-		if (query == "COME") {
-			int k;
-			cin >> k;
-			queue.resize(queue.size() + k, false);
-		}
-		else if (query == "WORRY" || query == "QUIET") {
-			int i;
-			cin >> i;
-			queue[i] = (query == "WORRY");
-		}
-		else if (query == "WORRY_COUNT") {
-			cout << count(begin(queue), end(queue), true) << endl;
-		}
-	}
+    vector<bool> queue;
+    for (int n = 0; n < q; ++n) {
+        string query;
+        cin >> query;
+        if (query == "COME") {
+            int k;
+            cin >> k;
+            queue.resize(queue.size() + k, false);
+        }
+        else if (query == "WORRY" || query == "QUIET") {
+            int i;
+            cin >> i;
+            queue[i] = (query == "WORRY");
+        }
+        else if (query == "WORRY_COUNT") {
+            cout << count(begin(queue), end(queue), true) << endl;
+        }
+    }
 
-	return 0;
+    return 0;
 }

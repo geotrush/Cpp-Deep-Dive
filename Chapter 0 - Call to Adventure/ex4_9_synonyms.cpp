@@ -25,39 +25,39 @@ using std::map;
 using std::set;
 
 int main() {
-	int q;
-	cin >> q;
+    int q;
+    cin >> q;
 
-	map<string, set<string>> words;
+    map<string, set<string>> words;
 
-	for (int i = 0; i < q; ++i) {
-		string query;
-		cin >> query;
+    for (int i = 0; i < q; ++i) {
+        string query;
+        cin >> query;
 
-		if (query == "ADD") {
-			string word1, word2;
-			cin >> word1 >> word2;
+        if (query == "ADD") {
+            string word1, word2;
+            cin >> word1 >> word2;
 
-			words[word1].insert(word2);
-			words[word2].insert(word1);
-		}
-		else if (query == "COUNT") {
-			string word;
-			cin >> word;
-			cout << words[word].size() << endl;
-		}
-		else if (query == "CHECK") {
-			string word1, word2;
-			cin >> word1 >> word2;
+            words[word1].insert(word2);
+            words[word2].insert(word1);
+        }
+        else if (query == "COUNT") {
+            string word;
+            cin >> word;
+            cout << words[word].size() << endl;
+        }
+        else if (query == "CHECK") {
+            string word1, word2;
+            cin >> word1 >> word2;
 
-			if (words[word1].count(word2) > 0) {
-				cout << "YES\n";
-			}
-			else {
-				cout << "NO\n";
-			}
-		}
-	}
+            if (words[word1].count(word2) > 0) {
+                cout << "YES\n";
+            }
+            else {
+                cout << "NO\n";
+            }
+        }
+    }
 
-	return 0;
+    return 0;
 }

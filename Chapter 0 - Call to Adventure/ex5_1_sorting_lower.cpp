@@ -17,25 +17,25 @@ using std::string;
 using std::vector;
 
 int main() {
-	int n;
-	cin >> n;
-	
-	vector<string> strings(n);
-	for (string& s : strings) {
-		cin >> s;
-	}
+    int n;
+    cin >> n;
+    
+    vector<string> strings(n);
+    for (string& s : strings) {
+        cin >> s;
+    }
 
-	auto compare_char = [](const char& left, const char& right) {
-		return tolower(left) < tolower(right);
-	};
+    auto compare_char = [](const char& left, const char& right) {
+        return tolower(left) < tolower(right);
+    };
 
-	sort(strings.begin(), strings.end(), [compare_char](const string& left, const string& right) {
-		return lexicographical_compare(begin(left), end(left), begin(right), end(right), compare_char);
-	});
-	
+    sort(strings.begin(), strings.end(), [compare_char](const string& left, const string& right) {
+        return lexicographical_compare(begin(left), end(left), begin(right), end(right), compare_char);
+    });
+    
     for (const string& s : strings) {
         cout << s << ' ';
     }
 
-	return 0;
+    return 0;
 }

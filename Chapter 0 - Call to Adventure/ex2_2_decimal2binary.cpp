@@ -15,20 +15,20 @@ using std::vector;
 using std::reverse;
 
 int main() {
-	int n;
-	cin >> n;
+    int n;
+    cin >> n;
 
-	vector<int> bin;
-	while (n > 0) {
-		bin.push_back(n % 2);
-		n /= 2;
-	}
+    vector<int> bin;
+    while (n > 0) {
+        bin.push_back(n % 2);
+        n /= 2;
+    }
 
-	reverse(bin.begin(), bin.end());
+    reverse(bin.begin(), bin.end());
 
-	for (const auto& i : bin) {
-		cout << i;
-	}
+    for (const auto& i : bin) {
+        cout << i;
+    }
 
-	return 0;
+    return 0;
 }

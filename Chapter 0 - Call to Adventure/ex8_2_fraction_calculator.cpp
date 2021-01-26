@@ -17,40 +17,40 @@ using std::invalid_argument;
 
 class Rational {
 public:
-	Rational() {
+    Rational() {
         p = 0;
         q = 1;
     }
-	Rational(const int& numerator, const int& denominator) {
-		if (denominator == 0) {
-			throw invalid_argument("Zero denominator!");
-		}
-		const int greatest_common_divisor = gcd(numerator, denominator);
-		p = numerator / greatest_common_divisor;
-		q = denominator / greatest_common_divisor;
+    Rational(const int& numerator, const int& denominator) {
+        if (denominator == 0) {
+            throw invalid_argument("Zero denominator!");
+        }
+        const int greatest_common_divisor = gcd(numerator, denominator);
+        p = numerator / greatest_common_divisor;
+        q = denominator / greatest_common_divisor;
 
-		if (q < 0) {
-			p = -p;
-			q = -q;
-		}
-	}
-	int Numerator() const {
-		return p;
-	}
-	int Denominator() const {
-		return q;
-	}
-	int gcd(const int& a, const int& b) const {
-		if (b == 0) {
-			return a;
-		}
-		else {
-			return gcd(b, a % b);
-		}
-	}
+        if (q < 0) {
+            p = -p;
+            q = -q;
+        }
+    }
+    int Numerator() const {
+        return p;
+    }
+    int Denominator() const {
+        return q;
+    }
+    int gcd(const int& a, const int& b) const {
+        if (b == 0) {
+            return a;
+        }
+        else {
+            return gcd(b, a % b);
+        }
+    }
 private:
-	int p;
-	int q;
+    int p;
+    int q;
 };
 
 const bool operator == (const Rational& left, const Rational& right) {
@@ -58,75 +58,75 @@ const bool operator == (const Rational& left, const Rational& right) {
 }
 
 const Rational operator + (const Rational& left, const Rational& right) {
-	if (left.Denominator() == right.Denominator()) {
-		return {left.Numerator() + right.Numerator(), left.Denominator()};
-	}
-	else {
-		return {left.Numerator() * right.Denominator() + right.Numerator() * left.Denominator(),
-				left.Denominator() * right.Denominator()};
-	}
+    if (left.Denominator() == right.Denominator()) {
+        return {left.Numerator() + right.Numerator(), left.Denominator()};
+    }
+    else {
+        return {left.Numerator() * right.Denominator() + right.Numerator() * left.Denominator(),
+                left.Denominator() * right.Denominator()};
+    }
 }
 
 const Rational operator - (const Rational& left, const Rational& right) {
-	return left + Rational(-right.Numerator(), right.Denominator());
+    return left + Rational(-right.Numerator(), right.Denominator());
 }
 
 const bool operator < (const Rational& left, const Rational& right) {
-	return (left - right).Numerator() < 0;
+    return (left - right).Numerator() < 0;
 }
 
 const Rational operator * (const Rational& left, const Rational& right) {
-	return {left.Numerator() * right.Numerator(),
-			left.Denominator() * right.Denominator()};
+    return {left.Numerator() * right.Numerator(),
+            left.Denominator() * right.Denominator()};
 }
 
 const Rational operator / (const Rational& left, const Rational& right) {
-	if (right.Numerator() == 0) {
-		throw domain_error("Division by zero!");
-	}
-	return left * Rational(right.Denominator(), right.Numerator());
+    if (right.Numerator() == 0) {
+        throw domain_error("Division by zero!");
+    }
+    return left * Rational(right.Denominator(), right.Numerator());
 }
 
 istream& operator >> (istream& input, Rational& fraction) {
-	int p, q;
-	if (input >> p && input.ignore(1) && input >> q) {
-		fraction = Rational(p, q);
-	}
-	return input;
+    int p, q;
+    if (input >> p && input.ignore(1) && input >> q) {
+        fraction = Rational(p, q);
+    }
+    return input;
 }
 
 ostream& operator << (ostream& output, const Rational& fraction) {
-	return output << fraction.Numerator() << '/' << fraction.Denominator();
+    return output << fraction.Numerator() << '/' << fraction.Denominator();
 }
 
 int main() {
-	Rational fraction_1, fraction_2;
-	char operation;
+    Rational fraction_1, fraction_2;
+    char operation;
 
-	try {
-		cin >> fraction_1 >> operation >> fraction_2;
+    try {
+        cin >> fraction_1 >> operation >> fraction_2;
 
-		if (operation == '+') {
-			cout << fraction_1 + fraction_2 << endl;
-		}
-		else if (operation == '-') {
-			cout << fraction_1 - fraction_2 << endl;
-		}
-		else if (operation == '*') {
-			cout << fraction_1 * fraction_2 << endl;
-		}
-		else if (operation == '/') {
-			try {
-				cout << fraction_1 / fraction_2 << endl;
-			}
-			catch (domain_error& domain_error) {
-				cout << domain_error.what();
-			}
-		}
-	}
-	catch (const invalid_argument& invalid_argument) {
-		cout << invalid_argument.what();
-	}
+        if (operation == '+') {
+            cout << fraction_1 + fraction_2 << endl;
+        }
+        else if (operation == '-') {
+            cout << fraction_1 - fraction_2 << endl;
+        }
+        else if (operation == '*') {
+            cout << fraction_1 * fraction_2 << endl;
+        }
+        else if (operation == '/') {
+            try {
+                cout << fraction_1 / fraction_2 << endl;
+            }
+            catch (domain_error& domain_error) {
+                cout << domain_error.what();
+            }
+        }
+    }
+    catch (const invalid_argument& invalid_argument) {
+        cout << invalid_argument.what();
+    }
 
-	return 0;
+    return 0;
 }

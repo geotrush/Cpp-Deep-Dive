@@ -13,13 +13,13 @@ using std::vector;
 
 class SortedStrings {
     public:
-		void AddString(const string& str) {
-			v.push_back(str);
-		}
-		vector<string> GetSortedStrings() {
-			sort(v.begin(), v.end());
-			return v;
-		}
+        void AddString(const string& str) {
+            v.push_back(str);
+        }
+        vector<string> GetSortedStrings() {
+            sort(v.begin(), v.end());
+            return v;
+        }
     private:
-		vector<string> v;
+        vector<string> v;
 };

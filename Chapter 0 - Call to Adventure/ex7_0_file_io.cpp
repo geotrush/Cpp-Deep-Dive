@@ -15,21 +15,21 @@ using std::ifstream;
 using std::ofstream;
 
 int main() {
-	ifstream input("input.txt");
-	string line;
-	if (input) {
-		while (getline(input, line)) {
-			cout << line << endl;
-		}
-	}
+    ifstream input("input.txt");
+    string line;
+    if (input) {
+        while (getline(input, line)) {
+            cout << line << endl;
+        }
+    }
 
     ifstream input2("input.txt");
-	ofstream output("output.txt");
-	if (input2) {
-		while (getline(input2, line)) {
-			output << line << endl;
-		}
-	}
+    ofstream output("output.txt");
+    if (input2) {
+        while (getline(input2, line)) {
+            output << line << endl;
+        }
+    }
 
-	return 0;
+    return 0;
 }

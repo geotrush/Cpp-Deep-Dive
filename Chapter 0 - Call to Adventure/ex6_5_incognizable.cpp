@@ -11,5 +11,5 @@ int main() {
 */
 
 struct Incognizable {
-	int x = 0, y = 1; // Any pair of integers is possible
+    int x = 0, y = 1; // Any pair of integers is possible
 };

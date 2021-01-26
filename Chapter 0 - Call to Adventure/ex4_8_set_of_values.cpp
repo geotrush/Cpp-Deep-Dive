@@ -15,8 +15,8 @@ using std::set;
 
 set<string> BuildMapValuesSet (const map<int, string>& m) {
     set<string> values;
-	for (auto& value : m) {
-		values.insert(value.second);
-	}
-	return values;
+    for (auto& value : m) {
+        values.insert(value.second);
+    }
+    return values;
 }

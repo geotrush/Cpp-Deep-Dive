@@ -13,5 +13,5 @@ using std::string;
 using std::vector;
 
 void MoveStrings(vector<string>& source, vector<string>& endpoint) {
-    	endpoint.insert(endpoint.end(), source.begin(), source.end());
+    endpoint.insert(endpoint.end(), source.begin(), source.end());
 }
