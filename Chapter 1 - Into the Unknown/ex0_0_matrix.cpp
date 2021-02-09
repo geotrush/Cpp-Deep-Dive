@@ -34,7 +34,12 @@ using std::ostream;
 using std::out_of_range;
 using std::invalid_argument;
 
+
 class Matrix {
+private:
+    int num_rows;
+    int num_columns;
+    vector<vector<int>> elements;
 public:
     Matrix() : num_rows(0), num_columns(0) {}
     Matrix(const int& num_rows, const int& num_columns) {
@@ -68,11 +73,8 @@ public:
     int GetNumColumns() const {
         return num_columns;
     }
-private:
-    int num_rows;
-    int num_columns;
-    vector<vector<int>> elements;
 };
+
 
 const bool operator == (const Matrix& one, const Matrix& two) {
     if (one.GetNumRows() != two.GetNumRows() ||
@@ -90,6 +92,7 @@ const bool operator == (const Matrix& one, const Matrix& two) {
 
     return true;
 }
+
 
 const Matrix operator + (const Matrix& one, const Matrix& two) {
     if (one.GetNumRows() != two.GetNumRows()) {
@@ -110,6 +113,7 @@ const Matrix operator + (const Matrix& one, const Matrix& two) {
     return result;
 }
 
+
 istream& operator >> (istream& input, Matrix& matrix) {
     int num_rows, num_columns;
     input >> num_rows >> num_columns;
@@ -123,6 +127,7 @@ istream& operator >> (istream& input, Matrix& matrix) {
 
     return input;
 }
+
 
 ostream& operator << (ostream& output, const Matrix& matrix) {
     output << matrix.GetNumRows() << ' ' << matrix.GetNumColumns() << endl;
@@ -138,6 +143,7 @@ ostream& operator << (ostream& output, const Matrix& matrix) {
 
     return output;
 }
+
 
 int main() {
     Matrix one, two;

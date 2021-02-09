@@ -69,7 +69,7 @@ int main() {
     for (const string& program : revolutions) {
         ++counters[program];
     }
-    for (const auto& [key, value] : counters) { // Only with c++17
+    for (const auto& [key, value] : counters) { // Only since c++17
         cout << key << ": " << value << endl;
     };
 
