@@ -31,9 +31,7 @@ enum class TaskStatus {
     DONE
 };
 
-
 using TasksInfo = map<TaskStatus, int>;
-
 
 void PrintTasksInfo(TasksInfo tasks_info) {
     cout << tasks_info[TaskStatus::NEW] << " new tasks" <<
@@ -42,11 +40,9 @@ void PrintTasksInfo(TasksInfo tasks_info) {
     ", " << tasks_info[TaskStatus::DONE] << " tasks are done\n";
 }
 
-
 TaskStatus NextStatus(TaskStatus task_status) {
     return static_cast<TaskStatus>(static_cast<int>(task_status) + 1);
 }
-
 
 void RemoveZeros(TasksInfo& tasks_info) {
     vector<TaskStatus> statuses_to_remove;
@@ -59,7 +55,6 @@ void RemoveZeros(TasksInfo& tasks_info) {
         tasks_info.erase(status);
     }
 }
-
 
 class TeamTasks {
 private:

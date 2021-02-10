@@ -43,12 +43,12 @@ template <typename Container>
 string Join(const Container& c, char d) {
     stringstream ss;
     bool first = true;
-    for (const auto& element : c) {
+    for (const auto& item : c) {
         if (!first) {
             ss << d;
         }
         first = false;
-        ss << element;
+        ss << item;
     }
     return ss.str();
 }
@@ -76,8 +76,8 @@ int main() {
     vector<vector<int>> v = {{13}, {31}};
     cout << v << endl;
 
-    // Function parameter type template
-    cout << max<double>(989, 979.9) << endl;
+    // Specify template parameter types
+    cout << max<double>(979, 989.3) << endl;
 
     return 0;
 }

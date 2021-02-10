@@ -1,6 +1,6 @@
 /*
 Task
-Write a function accepts a regional database and
+You should write a function that accepts a regional database and
 returns the maximal number of region repetitions.
 */
 #include <algorithm>
@@ -20,7 +20,6 @@ enum class Lang {
     DE, FR, IT
 };
 
-
 struct Region {
   string std_name;
   string parent_std_name;
@@ -28,12 +27,10 @@ struct Region {
   int64_t population;
 };
 
-
 bool operator < (const Region& lhs, const Region& rhs) {
     return tie(lhs.std_name, lhs.parent_std_name, lhs.names, lhs.population) <
         tie(rhs.std_name, rhs.parent_std_name, rhs.names, rhs.population);
 }
-
 
 int FindMaxRepetitionCount(const vector<Region>& regions) {
     int result = 0;

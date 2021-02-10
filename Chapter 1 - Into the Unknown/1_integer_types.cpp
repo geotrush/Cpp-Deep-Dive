@@ -16,7 +16,6 @@ enum class RequestType {
     REMOVE = 42
 };
 
-
 void ProcessRequest(set<int>& numbers, RequestType request_type, int request_data) {
     switch (request_type) {
     case RequestType::ADD:
@@ -55,4 +54,3 @@ int main() {
 
     return 0;
 }
-

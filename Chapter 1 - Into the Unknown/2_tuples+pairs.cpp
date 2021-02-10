@@ -31,7 +31,6 @@ private:
     int day;
 };
 
-
 const bool operator < (const Date& lhs, const Date& rhs) {
     return lhs.GetRank() < rhs.GetRank();
 }

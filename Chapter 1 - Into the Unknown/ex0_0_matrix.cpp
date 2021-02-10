@@ -75,13 +75,11 @@ public:
     }
 };
 
-
 const bool operator == (const Matrix& one, const Matrix& two) {
     if (one.GetNumRows() != two.GetNumRows() ||
         one.GetNumColumns() != two.GetNumColumns()) {
         return false;
     }
-
     for (int row = 0; row < one.GetNumRows(); ++row) {
         for (int column = 0; column < one.GetNumColumns(); ++column) {
             if (one.At(row, column) != two.At(row, column)) {
@@ -89,16 +87,13 @@ const bool operator == (const Matrix& one, const Matrix& two) {
             }
         }
     }
-
     return true;
 }
-
 
 const Matrix operator + (const Matrix& one, const Matrix& two) {
     if (one.GetNumRows() != two.GetNumRows()) {
         throw invalid_argument("Mismatched number of rows");
     }
-
     if (one.GetNumColumns() != two.GetNumColumns()) {
         throw invalid_argument("Mismatched number of columns");
     }
@@ -113,21 +108,17 @@ const Matrix operator + (const Matrix& one, const Matrix& two) {
     return result;
 }
 
-
 istream& operator >> (istream& input, Matrix& matrix) {
     int num_rows, num_columns;
     input >> num_rows >> num_columns;
-
     matrix.Reset(num_rows, num_columns);
     for (int row = 0; row < num_rows; ++row) {
         for (int column = 0; column < num_columns; ++column) {
             input >> matrix.At(row, column);
         }
     }
-
     return input;
 }
-
 
 ostream& operator << (ostream& output, const Matrix& matrix) {
     output << matrix.GetNumRows() << ' ' << matrix.GetNumColumns() << endl;
@@ -140,7 +131,6 @@ ostream& operator << (ostream& output, const Matrix& matrix) {
         }
         output << endl;
     }
-
     return output;
 }
 
