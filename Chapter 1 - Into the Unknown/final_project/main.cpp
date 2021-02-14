@@ -1,4 +1,16 @@
-﻿#include "date.h"
+﻿/*
+Task
+You should write a database that supports the following commands:
+1) "Add date event": adds a date-event pair;
+2) "Print": output the whole database;
+3) "Find condition": output the records that satisfy the condition;
+4) "Del condition": remove the records that satisfy the condition;
+5) "Last date": output the event record that happened at or before the date.
+Notes:
+1) Find and Del commands can have empty condition strings; 
+2) Find and Del commands can use any comparison operators.
+*/
+#include "date.h"
 #include "node.h"
 #include "database.h"
 #include "condition_parser.h"
