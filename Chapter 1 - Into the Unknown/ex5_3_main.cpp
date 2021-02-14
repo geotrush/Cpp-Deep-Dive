@@ -1,7 +1,7 @@
 /*
 Task
-You should create a project by decomposing the functions and classes
-from the previous Chapter's exercise: ex4_5_bus_routes_1.cpp
+You should decompose the functions and classes from the
+previous Chapter's exercise: ex4_5_bus_routes_1.cpp
 into separate header and source files.
 */
 #include "ex5_3_query.h"

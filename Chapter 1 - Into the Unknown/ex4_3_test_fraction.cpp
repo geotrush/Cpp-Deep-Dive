@@ -1,7 +1,7 @@
 /*
 Task
 You should write tests for the previous Chapter's class in ex8_0_fraction.cpp
-using the unit-testing framework from 4_unit_test_framework.cpp.
+using the unit-testing framework from 4+5_unit_test_framework.cpp.
 */
 #include "4+5_unit_test_framework.h"
 
