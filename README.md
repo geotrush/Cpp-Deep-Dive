@@ -2,7 +2,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coders-sweat.svg)](https://forthebadge.com)
 
-## :boat: An amateur's voyage in the deep waters of C++, guided by the 5-Part Coursera specialization [«Art of Modern C++ Development»](https://www.coursera.org/specializations/c-plus-plus-modern-development) from MIPT & Yandex:
+## :boat: An amateur's voyage in the deep waters of C++, guided by the 5-Part Coursera specialization [«Art of Modern C++ Development» from MIPT & Yandex](https://www.coursera.org/specializations/c-plus-plus-modern-development).
 
 > ### :hugs: _Any corrections are much appreciated!_
 
