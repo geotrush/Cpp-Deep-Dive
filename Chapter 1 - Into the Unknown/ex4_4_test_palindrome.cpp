@@ -30,13 +30,15 @@ bool IsPalindrome(const std::string& str) {
 
 // Unit tests
 void TestIsPalindrome() {
-    Assert(IsPalindrome(""), "empty string is a palindrome");
-    Assert(IsPalindrome("C"), "single-character string is a palindrome");
-    Assert(IsPalindrome("++C++"), "odd-character symmetric string is a palindrome");
+    Assert(IsPalindrome(""), "Empty string is a palindrome");
     Assert(IsPalindrome("tenet"), "«Tenet» is a palindrome");
-    Assert(IsPalindrome("dammitimmad"), "«Dammit, I’m mad!» is a palindrome");
+    Assert(IsPalindrome("C"), "Single-character string is a palindrome");
     Assert(IsPalindrome("drawocoward"), "«Draw, O coward!» is a palindrome");
+    Assert(IsPalindrome("dammitimmad"), "«Dammit, I’m mad!» is a palindrome");
+    Assert(IsPalindrome("++C++"), "Odd-character symmetric string is a palindrome");
     Assert(IsPalindrome("redrumsirismurder"), "«Red rum, sir, is murder.» is a palindrome");
+    Assert(IsPalindrome("wasitacaroracatIsaw"), "«Was it a car or a cat I saw?» is a palindrome");
+    Assert(IsPalindrome("suezgulpedottodeplugzeus"), "«Suez!» gulped Otto. «Deplug Zeus!» is a palindrome");
 }
 
 

@@ -40,7 +40,7 @@ private:
     shared_ptr<const Node> _left, _right;
 public:
     const uint8_t precedence;
-    Operation(char value) : precedence((value == '*') ? (2) : (1)), _op(value) {}
+    Operation(char value) : precedence((value == '*')?(2):(1)), _op(value) {}
     int Evaluate() const override {
         if (_op == '*') {
             return _left->Evaluate() * _right->Evaluate();
